@@ -1,0 +1,8 @@
+export default {
+  API_URL: process.env.EXPO_PUBLIC_API_URL ?? 'http://103.87.67.112:5000',
+  REFRESH_INTERVAL: parseInt(process.env.EXPO_PUBLIC_REFRESH_INTERVAL ?? '5000'),
+  CRITICAL_VOLTAGE_THRESHOLD: parseFloat(process.env.EXPO_PUBLIC_CRITICAL_VOLTAGE_THRESHOLD ?? '10'),
+  WARNING_VOLTAGE_THRESHOLD: parseFloat(process.env.EXPO_PUBLIC_WARNING_VOLTAGE_THRESHOLD ?? '12'),
+  NO_POWER_HOURS: parseInt(process.env.EXPO_PUBLIC_NO_POWER_HOURS ?? '24'),
+  DEBUG: process.env.EXPO_PUBLIC_DEBUG === 'true',
+};

@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">= 20.1.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://103.87.67.112:5000",
+        "EXPO_PUBLIC_REFRESH_INTERVAL": "5000",
+        "EXPO_PUBLIC_CRITICAL_VOLTAGE_THRESHOLD": "10",
+        "EXPO_PUBLIC_WARNING_VOLTAGE_THRESHOLD": "12",
+        "EXPO_PUBLIC_NO_POWER_HOURS": "24",
+        "EXPO_PUBLIC_DEBUG": "false"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://103.87.67.112:5000",
+        "EXPO_PUBLIC_REFRESH_INTERVAL": "5000",
+        "EXPO_PUBLIC_CRITICAL_VOLTAGE_THRESHOLD": "10",
+        "EXPO_PUBLIC_WARNING_VOLTAGE_THRESHOLD": "12",
+        "EXPO_PUBLIC_NO_POWER_HOURS": "24",
+        "EXPO_PUBLIC_DEBUG": "false"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
